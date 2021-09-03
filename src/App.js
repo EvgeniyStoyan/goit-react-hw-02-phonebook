@@ -64,14 +64,14 @@ class App extends Component {
     return (
       <div>
         <h1>Phonebook</h1>
-        <ContactForm onSubmit={this.addContacts}></ContactForm>
+        <ContactForm onSubmit={this.addContacts} />
 
         <h2>Contacts</h2>
-        <Filter value={filter} onChange={this.changeFilter}></Filter>
+        <Filter value={filter} onChange={this.changeFilter} />
         <ContactList
           contacts={visibleContacts}
           onDeleteContact={this.deleteContact}
-        ></ContactList>
+        />
       </div>
     );
   }
